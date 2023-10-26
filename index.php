@@ -33,7 +33,7 @@
     <main>
         
         <div class="image-container">
-        <img src="images/BassFace.jpg" alt=bassface>
+        <img src="images/BassFace.jpg" alt="bassface">
         <h1>Greetings</h1>
         <p>Hello,  
 
@@ -48,7 +48,7 @@
     <!--end div image-container-->
     <div id="mamp">
         <img src="images/mampscreenshot.png" alt="mamp image">
-        <img src="images/php-error.png" alt=phperror>
+        <img src="images/php-error.png" alt="phperror">
         
     </div>
     <!--end div mamp-->
@@ -81,11 +81,11 @@
         <h2>Week 4</h2>
         <nav>
             <ul>
-                <li><a href="#">form1.php</a></li>
-                <li><a href="#">form2.php</a></li>
-                <li><a href="#">form3.php</a></li>
-                <li><a href="#">form-arithmetic.php</a></li>
-                <li><a href="#">celsius</a></li>
+                <li><a href="weeks/week4/form1.php">form1.php</a></li>
+                <li><a href="weeks/week4/form2.php">form2.php</a></li>
+                <li><a href="weeks/week4/form3.php">form3.php</a></li>
+                <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
+                <li><a href="weeks/week4/celcius.php">celcius.php</a></li>
             </ul>
         </nav>
     
