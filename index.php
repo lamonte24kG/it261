@@ -92,8 +92,8 @@
        <h2>Week 5</h2>
         <nav>
             <ul>
-                <li><a href="#">currency1.php</a></li>
-                <li><a href="#">currency2.php</a></li>
+                <li><a href="weeks/week5/currency1.php">currency1.php</a></li>
+                <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
                 <li><a href="#">currency3.php</a></li>
                 <li><a href="#">null.php</a></li>
             </ul>
