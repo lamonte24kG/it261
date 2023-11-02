@@ -37,7 +37,7 @@
             <label>Choose your banking institution</label>
             
             <select name="bank">
-            <option value="" NULL>Select one!</option>
+            <option value="">Select one!</option>
             <option value="boa">Bank of America</option>
             <option value="chase">Chase Bank</option>
             <option value="banner">Banner Bank</option>
