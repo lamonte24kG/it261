@@ -48,7 +48,7 @@
     <!--end div image-container-->
     <div id="mamp">
         <img src="images/mampscreenshot.png" alt="mamp image">
-        <img src="images/php-error.png" alt="phperror">
+        <img src="images/php_error.png" alt="php_error">
         
     </div>
     <!--end div mamp-->
