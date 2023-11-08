@@ -7,7 +7,7 @@
 }
 
 body{
-    background: beige;
+    background: rgb(168, 183, 238);
 }
 
 h1{
@@ -17,11 +17,7 @@ h1{
 
 /*---form----*/
 form{
-    width: 500px;
-    margin: 30px auto;
-    border: solid;
-    border-color: rgb(71, 78, 216);
-}
+    width: 500px;}
 
 form ul{
     list-style-type:none;
