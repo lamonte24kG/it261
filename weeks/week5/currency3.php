@@ -10,31 +10,20 @@
 <body>
 
     <!--https://www.geeksforgeeks.org/how-to-prevent-xss-with-html-php/-->
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])  ;?>" method="post">
+    <form action=
+        "<?php 
+        echo htmlspecialchars($_SERVER['PHP_SELF'])  
+        ;?>" method="post">
         <fieldset>
             <label>NAME</label>
-            <input type="text" name="name" value="
-            <?php
-            if(isset($_POST['name']))
-            echo htmlspecialchars($_POST['name'])
-            ;?>
-            ">
+            <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
 
             <label>EMAIL</label>
-            <input type="email" name="email" value="
-            <?php
-            if(isset($_POST['email']))
-            echo htmlspecialchars($_POST['email'])
-            ;?>
-            ">
+            <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
 
             <label>How much money do you have?</label>
-            <input type="number" name="amount" value="
-            <?php
-            if(isset($_POST['amount']))
-            echo htmlspecialchars($_POST['amount'])
-            ;?>
-            ">
+            <input type="number" name="amount" value="<?php if(isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']);?>">
+            
 <!--time for our radio button that has an additional attribute VALUE-->  
             <label>Choose your currency</label>
 
