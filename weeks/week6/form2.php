@@ -161,7 +161,7 @@ if(!empty(
         mail($to, $subject, $body, $headers);
         header ('Location:thx.php');
     }
-//don't forget, you mus tupload your form onto the server to receive an email
+//don't forget, you mus to upload your form onto the server to receive an email
 
 
 
@@ -194,7 +194,7 @@ if(!empty(
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-        <h1>First form in Week 6</h1>
+        <h1>Second form in Week 6</h1>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"method="post">
         <fieldset>
 
