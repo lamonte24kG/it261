@@ -18,8 +18,8 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="./website/daily.php">Switch</a></li>
-                <li><a href="#">Troubleshoot</a></li>
-                <li><a href="#">Calculator</a></li>
+                <li><a href="./website/adder.php">Troubleshoot</a></li>
+                <li><a href="./website/calculator.php">Calculator</a></li>
                 <li><a href="#">Database</a></li>
                 <li><a href="#">Email</a></li>
                 <li><a href="#">Gallery</a></li>
@@ -102,8 +102,9 @@
         <h2>Week 6</h2>
         <nav>
             <ul>
-                <li><a href="#">form1.php</a></li>
-                <li><a href="#">functions.php</a></li>
+                <li><a href="weeks/week6/form.php">form1.php</a></li>
+                <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="weeks/week6/functions.php">functions.php</a></li>
                 <li><a href="#">implode.php</a></li>
             </ul>
         </nav>
