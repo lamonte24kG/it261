@@ -9,8 +9,7 @@
 </head>
 <body>
         <h1>First form in Week 6</h1>
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
-     method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"method="post">
         <fieldset>
 
             <legend>
