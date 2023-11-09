@@ -7,7 +7,7 @@
 }
 
 body{
-    background: rgb(168, 183, 238);
+    background: beige;
 }
 
 h1{
@@ -42,6 +42,12 @@ input[type=tel]{
     margin-bottom: 10px;
 }
 
+span{
+    display: block;
+    color: red;
+    font-style: italic;
+    margin-bottom: 10px;
+}
 select{
     margin-bottom: 10px;
 }
