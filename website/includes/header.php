@@ -1,33 +1,39 @@
 <?php
 
-define('THIS_PAGE', basename($_SERVER['PHP_SELF'])); 
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
-switch(THIS_PAGE) {
+switch(THIS_PAGE){
     case 'index.php';
     $title = 'Home page of our Website Project';
     $body = 'home';
+    break;
 
     case 'about.php';
     $title = 'About page of our Website Project';
     $body = 'about inner';
+    break;
 
     case 'daily.php';
     $title = 'Daily page of our Website Project';
     $body = 'daily inner';
+    break;
 
     case 'project.php';
     $title = 'Project page of our Website Project';
     $body = 'project inner';
+    break;
 
     case 'contact.php';
     $title = 'Contact page of our Website Project';
-    $body = 'contact';
+    $body = 'contact inner';
+    break;
 
     case 'gallery.php';
-    $title = 'Gallery page of our Website Project';
+    $title = 'gallery page of our Website Project';
     $body = 'gallery inner';
+    break;
 }
-// our navigational array!
+//our navigational array!
 $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
@@ -36,10 +42,8 @@ $nav = array(
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
+
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
