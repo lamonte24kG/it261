@@ -211,7 +211,7 @@ $phone = $_POST['phone'];
 //if age
 if(empty($_POST['age'])){
     //say something or do something
-    $gender_err = 'Please check your age group';
+    $age_err = 'Please check your age group';
     
 } else {
 $age = $_POST['age'];
