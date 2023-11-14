@@ -1,7 +1,4 @@
-<?php
-include ('config.php');
-?>
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"method="post">
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
         <fieldset>
 
             <legend>
@@ -19,7 +16,7 @@ include ('config.php');
             <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">  
             <span><?php echo $email_err ;?></span>
 
-            <label for="phone">Phone</label>
+            <label>Phone</label>
             <input type="tel" name="phone" aria-label="Please enter your phone number" placeholder="ex. (111)-111-1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>">
             <span><?php echo $phone_err ;?></span>
 
@@ -74,9 +71,8 @@ include ('config.php');
             <label>Privacy</label>
             <ul>
                 <li><input type="radio" name="privacy" value="yes"<?php if(isset($_POST['privacy']) && $_POST['privacy'] == "yes") echo 'checked="checked"';?>>Yes</li>
-                <span><?php echo $privacy_err ;?></span>
             </ul>
-            
+            <span><?php echo $privacy_err ;?></span>
 
             <input type="submit" value="Send it">
 
