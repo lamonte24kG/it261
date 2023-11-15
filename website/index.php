@@ -5,8 +5,26 @@ include('./includes/header.php');?>
 <div id="wrapper">
 
 <div id="hero">
+    <?php
+    $photos[0] = 'seahawks1';
+    $photos[1] = 'seahawks2';
+    $photos[2] = 'seahawks3';
+    $photos[3] = 'seahawks4';
+    $photos[4] = 'seahawks5';
+    
+    function random_images($photos){
+    $my_return = '';
+    $i = rand(0, 4);
+    $selected_image = ''.$photos[$i].'.jpg';
+    $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+    return $my_return;
+    
+    }//end function
+    
+    echo random_images($photos);
+    ?>
 
-    <img src="images/twelve.jpg" alt="Twelve is greater than 3">
+    <!--<img src="images/twelve.jpg" alt="Twelve is greater than 3">-->
 
 </div>
 <!--end hero-->
@@ -14,7 +32,6 @@ include('./includes/header.php');?>
 <main>
 
 <h1>Welcome to our Web App Programming Class!</h1>
-
 <h2>We are going to learn PHP!</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend, odio vitae tincidunt ultricies, tellus libero interdum lectus, porttitor pharetra lectus magna vel enim. Quisque semper non dui ac malesuada. Cras eu pharetra nisi. Aliquam eget odio ante. Donec et porttitor elit, a sollicitudin leo. Fusce varius sem elementum sem pharetra varius. Sed rutrum, mi vel fermentum finibus, purus mi malesuada mauris, ullamcorper pellentesque quam eros a ipsum. Duis volutpat nulla tincidunt dapibus fringilla.</p>
