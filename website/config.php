@@ -274,7 +274,7 @@ $_POST['comments'],
 $_POST['privacy'])){
 
 
-$to = 'wlgolden@gmail.com';
+$to = 'szemeo@mystudentswa.com';
 $subject = 'Test email on     '.date('m/d/y, h i A');
 $body = '
 First Name:  '.$first_name.' '.PHP_EOL.'
