@@ -1,5 +1,5 @@
 <?php
-$people['Donald_Trump'] = 'trump_trum2_Former President from NY.';
+$people['Donald_Trump'] = 'trump_trum2_Former President future inmate from NY.';
 $people['Joe_Biden'] = 'biden_bide2_President from PA.';
 $people['Hilary_Clinton'] = 'clint_clin2_Secretary from NY.';
 $people['Bernie_Sanders'] = 'sande_sand2_Senator from VT.';
@@ -46,7 +46,7 @@ $people['Julian_Castro'] = 'castr_cast2_Former Housing/Urban from TX.';
 <td><?php echo str_replace('_', ' ', $name)  ;?></td>
 <td><?php echo substr($image, 12, -1);?>
 <?php str_replace('_', ' ', $image)  ;?></td> 
-<td><img src="images/<?php echo substr($image, 7, 11);?>.jpg" alt="pic2"></td>
+<td><img src="images/<?php echo substr($image, 7, 11);?>.jpg" alt="<?php echo str_replace('_', ' ', $name)  ;?>"></td>
 </tr>
 <?php endforeach ;?>
 </table>
