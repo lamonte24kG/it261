@@ -46,7 +46,7 @@ $people['Julian_Castro'] = 'castr_cast2_Former Housing/Urban from TX.';
 <td><?php echo str_replace('_', ' ', $name)  ;?></td>
 <td><?php echo substr($image, 12, -1);?>
 <?php str_replace('_', ' ', $image)  ;?></td> 
-<td><img src="images/<?php echo substr($image, 7, 11);?>.jpg" alt="<?php echo str_replace('_', ' ', $name)  ;?>"></td>
+<td><img src="images/<?php echo substr($image, 6, 5);?>.jpg" alt="<?php echo str_replace('_', ' ', $name)  ;?>"></td>
 </tr>
 <?php endforeach ;?>
 </table>
