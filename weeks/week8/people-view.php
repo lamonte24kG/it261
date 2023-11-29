@@ -59,11 +59,11 @@ include('./includes/header.php');
 <ul>
 <?php
 echo '
-<li><b>First Name:<b>'.$first_name.'</li>
-<li><b>last Name:<b>'.$last_name.'</li>
-<li><b>Email:<b>'.$Email.'</li>
-<li><b>Birthdate:<b>'.$birthdate.'</li>
-<li><b>Occupation:<b>'.$occupation.'</li>
+<li><b>First Name:</b>'.$first_name.'</li>
+<li><b>last Name:</b>'.$last_name.'</li>
+<li><b>Email:</b>'.$Email.'</li>
+<li><b>Birthdate:</b>'.$birthdate.'</li>
+<li><b>Occupation:</b>'.$occupation.'</li>
 ';
 ?>
 </ul>
