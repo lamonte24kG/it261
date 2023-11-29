@@ -16,13 +16,13 @@ $people['Flea'] = 'flea_Flea was born in Melbourne, Australia; he is best known 
 
 
 ?>
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 8 Database</title>-->
+    <title>Week 7, class exercise - pictures</title>
     <style>
     
 
@@ -47,7 +47,7 @@ $people['Flea'] = 'flea_Flea was born in Melbourne, Australia; he is best known 
     
     </style>
 
-<!--</head>-->
+</head>
 <!--when you have an array you must start with a foreach loop, you cannot just say echo people, it will not work-->
 <body>
 <table>
@@ -61,12 +61,3 @@ $people['Flea'] = 'flea_Flea was born in Melbourne, Australia; he is best known 
 </table>
 </body>
 </html>
-
-
-
-
-</div>
-<!--end wrapper-->
-<!--footer starts here-->
-<?php
-include('./includes/footer.php');
