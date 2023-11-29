@@ -1,0 +1,49 @@
+/*styles for week 8's people.php and people-view.php files */
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background:blanchedalmond;
+}
+
+#wrapper{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+main{
+    width: 63%;
+    float: left;
+}
+
+aside{
+    width: 34%;
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px dotted brown;
+    clear: both;
+    }
+    
+     footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+     }   
+    
+     footer li{
+    justify-content: center;
+    margin: 0 15px;
+     }
+    
