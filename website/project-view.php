@@ -53,8 +53,6 @@ include('./includes/header.php');
 
 ?>
 
-<div id="wrapper">
-    
 <main>
 <h1>Welcome to our Project View Page</h1>
 <h2>Introducing: <?php echo $first_name;?></h2>

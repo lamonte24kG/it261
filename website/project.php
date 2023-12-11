@@ -6,19 +6,21 @@ include('./includes/header.php');
 
 
 ?>
-<div id="wrapper">
 
 <main>
-<h1>Welcome to my Project Page</h1>
+<h1>Welcome to our Project Page</h1>
 <?php
-
 $sql = 'SELECT * FROM project';
 
-//connect to the database!!!
+//now. we need to connect to the database!!!
 
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
+echo $iConn;
+
 $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
+
+echo $result;
 
 //we have a row which translates into an array
 //if our result is greater than 0, then we are happy
@@ -38,7 +40,7 @@ while($row = mysqli_fetch_assoc($result)){
     <li>Birthdate:  '.$row['birthdate'].'</li>
     </ul>
 
-    <p>For more information about '.$row['first_name'].', click <a href="project-view.php?id='.$row['people_id'].' ">here</a></p>
+    <p>For more information about '.$row['first_name'].', click <a href="project-view.php?id='.$row['project_id'].' ">here</a></p>
 
     ';
 
