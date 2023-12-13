@@ -50,14 +50,13 @@ if(empty($password1)) {
 }
 
 // logic - we are not going to ask if  password2 is empty, or question is
-// does password1 == password2
+// does password1 == to password2
 
 if($password1 !== $password2) {
     array_push($errors, 'Passwords do not match');
 }
 
 // we now have to select from teh table where username = username and password = password...AND limit 1
-
 $user_check_query = "SELECT * FROM users WHERE username = '$username' OR email = '$email' LIMIT 1 ";
 
 
@@ -91,7 +90,7 @@ if($rows['email'] == $email){
 
 if((int)$errors == 0){
 
-$password = md5($password1);//md5 converts user password into 32 digit code
+$password = md5($password1);//md5 converts user password into 32 character password
 
 
 // logically - we have to insert the information into our database
@@ -103,11 +102,61 @@ mysqli_query($iConn, $query);
 $_SESSION['username'] = $username;
 $_SESSION['success'] = $success;
 
-header('location:login.php');
+header('Location:login.php');
 
 
 } //end if errors
 
 } //closed if isset reg_user
 
-  
+// we must now see if our login_user has been set!
+
+if(isset($_POST['login_user'])){
+    // our login page will only have two input fields - one for username and one for password
+    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $password = mysqli_real_escape_string($iConn, $_POST['password']);
+
+// if the end user does not fill imn their username, a message appears
+
+    if(empty($username)) {
+        array_push($errors, 'Username is required');
+    }
+
+    if(empty($password)) {
+        array_push($errors, 'Password is required');
+    }
+    
+    // we are counting our errors, and if we have no errors - we will continue the same way
+
+if(count($errors) == 0){
+
+$password = md5($password);
+
+//we are going to query our users table to make sure that our username AND password match
+
+$query = "SELECT * FROM users WHERE username = '$username' AND password = '$password' ";
+
+$results = mysqli_query($iConn, $query);
+
+if(mysqli_num_rows($results) == 1) {
+$_SESSION['username'] = $username;
+$_SESSION['success'] = $success;
+
+// if the above is successful, we will be directed to the index.php!!!
+
+header('Location:index.php');
+
+
+}else{
+
+array_push($errors, 'Wrong username/password combo!!!');
+
+}
+
+
+
+} // end count errors
+
+
+
+}  // close if isset login_user
